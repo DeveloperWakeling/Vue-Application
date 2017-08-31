@@ -14,12 +14,8 @@
         </div>
       </md-toolbar>
       <md-list>
-        <md-list-item>
-          <router-link to='/'>Home</router-link>
-        </md-list-item>
-        <md-list-item>
-          <router-link to='/about'>About</router-link>
-        </md-list-item>
+          <router-link v-on:click.native="toggleSideNav" tag="md-list-item" to='/'>Home</router-link></md-list-item>
+          <router-link v-on:click.native="toggleSideNav" tag="md-list-item" to='/about'>About</router-link>
       </md-list>
     </md-sidenav>
     <router-view></router-view>
