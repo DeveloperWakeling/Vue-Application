@@ -3,23 +3,24 @@
 import Vue from 'vue'
 import App from './App'
 import VueRouter from 'vue-router'
-
+import VueMaterial from 'vue-material'
+import 'vue-material/dist/vue-material.css'
 
 // Importing the different components
-import Hello from './components/Hello'
+import Home from './components/Home'
 import About from './components/About'
+import axios from 'axios'
 
 Vue.use(VueRouter)
+Vue.use(VueMaterial)
 
 const routes = [
   // Defining the routes for the application
-  {path: '/', component: Hello},
+  {path: '/', component: Home},
   {path: '/about', component: About},
 ]
 
 Vue.config.productionTip = false
-
-/* eslint-disable no-new */
 
 const router = new VueRouter({
   routes,
