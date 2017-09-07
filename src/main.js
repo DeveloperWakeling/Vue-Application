@@ -9,6 +9,7 @@ import 'vue-material/dist/vue-material.css'
 // Importing the different components
 import Home from './components/Home'
 import About from './components/About'
+import axios from 'axios'
 
 Vue.use(VueRouter)
 Vue.use(VueMaterial)
@@ -20,8 +21,6 @@ const routes = [
 ]
 
 Vue.config.productionTip = false
-
-/* eslint-disable no-new */
 
 const router = new VueRouter({
   routes,
