@@ -5,7 +5,6 @@
     <img src="../assets/logo.png" width="20%" height="20%">
       <ul>
         <li v-for="user in users" :key="user.id">
-          test
           {{user.username}}
         </li>
       </ul>
