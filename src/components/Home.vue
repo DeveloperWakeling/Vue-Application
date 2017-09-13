@@ -1,35 +1,25 @@
 
 <template>
   <div class="Home">
-    <h1>{{ msg }}</h1>
-    <img src="../assets/logo.png" width="20%" height="20%">
-      <ul>
-        <li v-for="user in users" :key="user.id">
-          {{user.username}}
-        </li>
-      </ul>
+    <b-jumbotron>
+      <template slot="header">
+        {{msg}}
+      </template>
+    </b-jumbotron>
+    <b-container fluid>
+      <p>
+        Just another site that will hopefully be used in showcasing some of my work as a Software Developer
+      </p>
+    </b-container>
   </div>
 </template>
 
 <script>
-import {HTTP} from '../http-common';
-
 export default {
   name: 'Home',
-  data: () =>({
-    msg: 'Welcome to My Portfolio Space',
-    users: []
-  }), 
-  created() {
-    HTTP.get()
-      .then(response => {
-        debugger;
-        this.users = response.data;
-      })
-      .catch(e => {
-        console.log(e);
-      });
-  }
+  data: () => ({
+    msg: 'Welcome to My Portfolio Space'
+  })
 }
 </script>
 
