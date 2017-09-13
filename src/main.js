@@ -10,7 +10,12 @@ import 'vue-material/dist/vue-material.css'
 import Home from './components/Home'
 import About from './components/About'
 import axios from 'axios'
+import BootstrapVue from 'bootstrap-vue'
+/* ...there may be other imports here */
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'bootstrap/dist/css/bootstrap.css'
 
+Vue.use(BootstrapVue)
 Vue.use(VueRouter)
 Vue.use(VueMaterial)
 

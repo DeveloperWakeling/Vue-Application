@@ -3,11 +3,7 @@
   <div class="Home">
     <h1>{{ msg }}</h1>
     <img src="../assets/logo.png" width="20%" height="20%">
-      <ul>
-        <li v-for="user in users" :key="user.id">
-          {{user.username}}
-        </li>
-      </ul>
+    <b-alert show>Default Alert</b-alert>
   </div>
 </template>
 
@@ -17,19 +13,8 @@ import {HTTP} from '../http-common';
 export default {
   name: 'Home',
   data: () =>({
-    msg: 'Welcome to My Portfolio Space',
-    users: []
-  }), 
-  created() {
-    HTTP.get()
-      .then(response => {
-        debugger;
-        this.users = response.data;
-      })
-      .catch(e => {
-        console.log(e);
-      });
-  }
+    msg: 'Welcome to My Portfolio Space'
+  })
 }
 </script>
 
