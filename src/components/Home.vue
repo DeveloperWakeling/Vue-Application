@@ -1,18 +1,23 @@
 
 <template>
   <div class="Home">
-    <h1>{{ msg }}</h1>
-    <img src="../assets/logo.png" width="20%" height="20%">
-    <b-alert show>Default Alert</b-alert>
+    <b-jumbotron>
+      <template slot="header">
+        {{msg}}
+      </template>
+    </b-jumbotron>
+    <b-container fluid>
+      <p>
+        Just another site that will hopefully be used in showcasing some of my work as a Software Developer
+      </p>
+    </b-container>
   </div>
 </template>
 
 <script>
-import {HTTP} from '../http-common';
-
 export default {
   name: 'Home',
-  data: () =>({
+  data: () => ({
     msg: 'Welcome to My Portfolio Space'
   })
 }

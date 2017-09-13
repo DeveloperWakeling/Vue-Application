@@ -9,13 +9,13 @@
     <md-sidenav class="md-left" ref="sidenav">
       <md-toolbar>
         <div class="md-toolbar-container">
-          <!-- <router-link class="md-button md-raised" v-bind:to="'/about'">About</router-link> -->
-          <h2>Navigation</h2>
+          <h3>Navigation</h3>
         </div>
       </md-toolbar>
       <md-list>
-          <router-link v-on:click.native="toggleSideNav" tag="md-list-item" to='/'>Home</router-link></md-list-item>
+          <router-link v-on:click.native="toggleSideNav" tag="md-list-item" to='/'>Home</router-link>
           <router-link v-on:click.native="toggleSideNav" tag="md-list-item" to='/about'>About</router-link>
+          <router-link v-on:click.native="toggleSideNav" tag="md-list-item" to='/cover'>Cover</router-link>
       </md-list>
     </md-sidenav>
     <router-view></router-view>
@@ -28,9 +28,6 @@ export default {
   methods: {
     toggleSideNav() {
       this.$refs.sidenav.toggle();
-    },
-    test() {
-      debugger;
     }
   }
 }
