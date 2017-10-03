@@ -1,4 +1,4 @@
-# Build Status
+[![Build Status](https://travis-ci.org/DeveloperWakeling/VuetifyApplication.svg?branch=dev)](https://travis-ci.org/DeveloperWakeling/VuetifyApplication)
 
 # Vue Application
 
