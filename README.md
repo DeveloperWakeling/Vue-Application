@@ -1,4 +1,6 @@
-# dev-wakeling-vuetify
+# Build Status
+
+# Vue Application
 
 A Vue Application to get started on in order to learn more about VueJS and how it can be used in different aspects of projects
 
@@ -13,7 +15,3 @@ npm run dev
 
 # build for production with minification
 npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
