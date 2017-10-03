@@ -13,12 +13,23 @@
         </div>
       </md-toolbar>
       <md-list>
-          <router-link v-on:click.native="toggleSideNav" tag="md-list-item" to='/'>Home</router-link>
-          <router-link v-on:click.native="toggleSideNav" tag="md-list-item" to='/about'>About</router-link>
-          <router-link v-on:click.native="toggleSideNav" tag="md-list-item" to='/cover'>Cover</router-link>
+        <router-link v-on:click.native="toggleSideNav" tag="md-list-item" to='/'>Home</router-link>
+        <router-link v-on:click.native="toggleSideNav" tag="md-list-item" to='/about'>About</router-link>
+        <router-link v-on:click.native="toggleSideNav" tag="md-list-item" to='/updates'>Keep Up to Date</router-link>
       </md-list>
     </md-sidenav>
     <router-view></router-view>
+    <footer class="footer">
+      <a href="https://www.facebook.com">
+        <i id="social-fb" class="fa fa-facebook-square fa-2x social"></i>
+      </a>
+      <a href="https://twitter.com/dvlprwakeling">
+        <i id="social-tw" class="fa fa-twitter-square fa-2x social"></i>
+      </a>
+      <a href="mailto:michael@developerwakeling.com">
+        <i id="social-em" class="fa fa-envelope-square fa-2x social"></i>
+      </a>
+    </footer>
   </div>
 </template>
 
@@ -40,6 +51,20 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  color: #2c3e50;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  line-height: 40px;
+  /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+i{
   color: #2c3e50;
 }
 </style>

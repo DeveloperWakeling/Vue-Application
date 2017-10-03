@@ -9,7 +9,7 @@ import 'vue-material/dist/vue-material.css'
 // Importing the different components
 import Home from './components/Home'
 import About from './components/About'
-import Cover from './components/Cover'
+import Updates from './components/Updates'
 import axios from 'axios'
 import BootstrapVue from 'bootstrap-vue'
 /* ...there may be other imports here */
@@ -24,7 +24,7 @@ const routes = [
   // Defining the routes for the application
   {path: '/', component: Home},
   {path: '/about', component: About},
-  {path: '/cover', component: Cover},
+  {path: '/updates', component: Updates},
 ]
 
 Vue.config.productionTip = false
